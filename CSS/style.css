@@ -1,0 +1,478 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: url(../images/bgi.png);
+}
+
+body:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  margin-left: -350px;
+  background: url(../images/light.png) no-repeat;
+  background-size: cover;
+  width: 700px;
+  height: 350px;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.header:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: url(../images/lenta_left.png) no-repeat;
+  background-size: contain;
+  background-position-x: center;
+  width: 20%;
+  height: 350px;
+}
+
+.header:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: url(../images/lenta_right.png) no-repeat;
+  background-size: contain;
+  background-position-x: center;
+  width: 20%;
+  height: 350px;
+}
+
+.call {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  position: fixed;
+  top: 40%;
+  right: -130px;
+  width: 200px;
+  min-width: 70px;
+  height: 70px;
+  border-radius: 30px 0 0 30px;
+  background: white;
+  transition: 1s;
+}
+
+.call-icon {
+  display: inline-block;
+  margin: 5px;
+  width: 60px;
+  height: 60px;
+  background: url(../images/call.png);
+  background-size: cover;
+  background-position-x: center;
+}
+
+.call-text {
+  display: block;
+  padding: 0 10px;
+}
+
+.call:hover {
+  right: 0;
+}
+
+.logo {
+  display: flex;
+  justify-content: flex-end;
+  background: url(../images/logo.png) no-repeat;
+  background-size: contain;
+  background-position-x: center;
+  width: 50%;
+  height: 150px;
+  min-width: 200px;
+}
+
+.contact span {
+  display: block;
+  color: white;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.contact {
+  margin: 10px;
+  min-width: 40px;
+}
+
+.number {
+  font-size: 24px;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.happy {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  width: 60%;
+  min-width: 700px;
+  max-width: 1980px;
+}
+
+.freind {
+  display: flex;
+  padding-left: 1%;
+  justify-content: flex-start;
+  align-items: center;
+  border-radius: 100px;
+  width: 60%;
+  height: 100px;
+  background: white;
+}
+
+.freind div span {
+  display: block;
+  padding: 0 10px 0 10px;
+  font-size: 26px;
+}
+
+.happy h1 {
+  font-size: 40pt;
+  color: #ffea00;
+}
+
+.text span {
+  display: block;
+  margin-bottom: 5px;
+  text-align: center;
+  color: white;
+  font-size: 20px;
+}
+
+.button-orange {
+  margin: 10px;
+  padding: 15px;
+  font-size: 26px;
+  border: 0;
+  border-radius: 100px;
+  background: #ff9000;
+  color: white;
+  box-shadow: 0 0.7vw 0.5vw rgba(0, 0, 0, 0.3),
+    inset 0px 0px 10px rgba(228, 227, 227, 0.5);
+}
+
+.button-orange:hover {
+  opacity: 0.5;
+}
+
+.twomin {
+  color: white;
+  font-size: 16px;
+}
+
+.why {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  width: 60%;
+  min-width: 700px;
+  max-width: 1980px;
+  background: url(../images/why.png) no-repeat;
+  background-size: cover;
+  text-align: center;
+}
+
+.why:after {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 0;
+  margin: -80px -8% 0 0;
+  background: url(../images/balloons1.png) no-repeat;
+  background-size: contain;
+  background-position-x: center;
+  width: 25%;
+  height: 350px;
+  z-index: -1;
+}
+
+.why h1 {
+  display: flex;
+  padding: 30px 20px 20px 20px;
+  color: #ff9200;
+}
+
+.stend {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 25%;
+  height: 250px;
+}
+
+.card span {
+  font-size: 14px;
+  text-align: center;
+}
+
+.card div {
+  min-width: 150px;
+  width: 100%;
+  height: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.card.one div {
+  background: url(../images/card1.png) no-repeat;
+  background-size: contain;
+  background-position-x: center;
+}
+
+.card.two div {
+  background: url(../images/card2.png) no-repeat;
+  background-size: contain;
+  background-position-x: center;
+}
+
+.card.there div {
+  background: url(../images/card3.png) no-repeat;
+  background-size: contain;
+  background-position-x: center;
+}
+
+.card.foo div {
+  background: url(../images/card4.png) no-repeat;
+  background-size: contain;
+  background-position-x: center;
+}
+
+.cards {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  width: 60%;
+  min-width: 700px;
+  max-width: 1980px;
+  background: url(../images/bgcards.png) no-repeat;
+  background-size: cover;
+  padding: 0 0 20px 0;
+}
+
+.cards h1 {
+  display: flex;
+  margin: 30px 20px 20px 20px;
+  color: white;
+  font-size: 40px;
+}
+
+.cards h2 {
+  padding: 20px 0;
+  color: white;
+  font-size: 24px;
+}
+
+.present {
+  display: flex;
+  background: url(../images/card.png) no-repeat;
+  background-size: contain;
+  background-position-x: center;
+  width: 60%;
+  height: 300px;
+}
+
+.infopresent {
+  display: flex;
+  width: 60%;
+  text-align: center;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.table-info {
+  text-align: left;
+  font-size: 20px;
+  color: white;
+  border-collapse: collapse;
+}
+
+.table-info tr {
+  border-top: 1px solid white;
+}
+
+.table-info td {
+  padding: 10px 10px;
+}
+
+.table-info:last-child {
+  border-bottom: 1px solid white;
+}
+
+.how {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  position: relative;
+  width: 60%;
+  min-width: 700px;
+  max-width: 1980px;
+  background: url(../images/bghow.png) no-repeat;
+  background-size: cover;
+}
+
+.how h1 {
+  display: flex;
+  margin: 30px 20px 20px 20px;
+  color: #ff9200;
+  font-size: 40px;
+}
+
+.how-items {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  width: 100%;
+  text-align: center;
+}
+
+.how-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.how-item-icon {
+  min-width: 150px;
+  width: 100%;
+  height: 150px;
+}
+
+.how-items .icon-1 {
+  background: url(../images/how-item1.png) no-repeat;
+  background-size: contain;
+  background-position-x: center;
+}
+
+.how-items .icon-2 {
+  background: url(../images/how-item2.png) no-repeat;
+  background-size: contain;
+  background-position-x: center;
+}
+
+.how-items .icon-3 {
+  background: url(../images/how-item3.png) no-repeat;
+  background-size: contain;
+  background-position-x: center;
+}
+
+.how-item-descr {
+  padding: 20px 20px;
+}
+
+.test {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  width: 60%;
+  min-width: 700px;
+  max-width: 1980px;
+  background: url(../images/bgtest.png) no-repeat;
+  background-size: cover;
+}
+
+.test h1 {
+  display: flex;
+  margin: 30px 20px 20px 20px;
+  color: #ff9200;
+  font-size: 40px;
+}
+
+.test-items {
+  display: flex;
+  justify-content: center;
+  padding: 0 60px;
+}
+
+.test-items .button-orange {
+  font-size: 20px;
+}
+
+.set {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  width: 60%;
+  min-width: 700px;
+  max-width: 1980px;
+  background: url(../images/bgset.png) no-repeat;
+  background-size: cover;
+  background-position-x: center;
+  border-radius: 0 0 10px 10px;
+}
+
+.set-items {
+  display: flex;
+  justify-content: center;
+  padding: 10px 0 50px 0;
+}
+
+.set h1 {
+  display: flex;
+  margin: 30px 20px 20px 20px;
+  padding: 200px 0 0 0;
+  color: white;
+  font-size: 40px;
+}
+
+.set-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+}
+
+.set-item .button-orange {
+  background: #0080d0;
+  width: 250px;
+}
+
+.set-item .cost {
+  width: 250px;
+  margin: 10px;
+  padding: 15px;
+  font-size: 26px;
+  border: 0;
+  border-radius: 100px;
+  background: rgba(255, 255, 255);
+  box-shadow: 0 0.7vw 0.5vw rgba(0, 0, 0, 0.3);
+}
+
+.footer {
+  margin: 20px 0;
+  color: white;
+  width: 40%;
+  font-weight: none;
+  text-align: center;
+}
